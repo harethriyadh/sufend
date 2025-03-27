@@ -34,7 +34,7 @@ function LoginPage() {
 
       if (data.token) {
         localStorage.setItem('authToken', data.token);
-        window.location.href = '/'; // Redirect to the root of your application
+        window.location.href = "/index";  // Redirect to the root of your application
       } else {
         alert(data.message || 'Login failed. Check your credentials.');
       }
